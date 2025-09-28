@@ -5,16 +5,14 @@ import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 
-// don't import files from `public/` — reference them by public URL instead
-// Turbopack/Next treats imports from `public/` as unknown module types; use the public path.
 const cardGLB = '/models/card.glb';
-const lanyard = '/lanyard.png';
+const lanyard = '/lanyard-v.png';
 
 import * as THREE from 'three';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
-export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], fov = 20, transparent = true }) {
+export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], fov = 20, transparent = true, logo = "/textures/card-logo.png", logoScale = 1.5 }) {
   return (
     <div className="relative z-0 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
       <Canvas
@@ -24,7 +22,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
       >
         <ambientLight intensity={Math.PI} />
         <Physics gravity={gravity} timeStep={1 / 60}>
-          <Band />
+          <Band logo={logo} logoScale={logoScale} />
         </Physics>
         <Environment blur={0.75}>
           <Lightformer
@@ -60,7 +58,15 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
     </div>
   );
 }
-function Band({ maxSpeed = 50, minSpeed = 0 }) {
+
+// Prompt Copilot:
+// Ubah komponen Band agar bisa menerima prop "logo" untuk mengganti tekstur kartu (.glb).
+// - Default value: "/textures/card-logo.png"
+// - Gunakan useTexture dari @react-three/drei untuk load file logo
+// - Override materials.base.map dengan logoTex, lalu set needsUpdate = true
+// - Jika logo tidak diberikan, pakai default
+// - Hasilnya: <Band logo="/textures/my-logo.png" /> akan mengganti tekstur kartu
+function Band({ maxSpeed = 50, minSpeed = 0, logo = "/textures/card-logo.png", logoScale = 1 }) {
   const band = useRef(),
     fixed = useRef(),
     j1 = useRef(),
@@ -73,6 +79,12 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
     dir = new THREE.Vector3();
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 };
   const { nodes, materials } = useGLTF(cardGLB);
+  const logoTex = useTexture(logo);
+  materials.base.map = logoTex;
+  materials.base.needsUpdate = true;
+  logoTex.repeat.set(logoScale, logoScale);
+  logoTex.needsUpdate = true;
+  logoTex.wrapS = logoTex.wrapT = THREE.RepeatWrapping;
   const texture = useTexture(lanyard);
   const [curve] = useState(
     () =>

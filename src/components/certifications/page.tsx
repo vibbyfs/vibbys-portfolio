@@ -24,7 +24,14 @@ export default function Certifications() {
               <p className="text-sm mt-1">
                 Certificate:{" "}
                 <span className="font-mono text-xs">
-                  UC-d8f76b8f-596a-49c3-96a8-c09cb3f406c6
+                 <a
+                   href="https://www.udemy.com/certificate/UC-d8f76b8f-596a-49c3-96a8-c09cb3f406c6/"
+                   className="text-blue-600 hover:underline"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                 >
+                   UC-d8f76b8f-596a-49c3-96a8-c09cb3f406c6
+                 </a>
                 </span>
               </p>
               <p className="text-sm mt-1">No expiration date</p>
@@ -45,7 +52,14 @@ export default function Certifications() {
                   <p className="text-sm mt-1">
                     Certificate:{" "}
                     <span className="font-mono text-xs">
-                      6a942dfd-425b-4aa0-9863-c11b005330ae
+                     <a
+                       href="https://www.credly.com/badges/6a942dfd-425b-4aa0-9863-c11b005330ae"
+                       className="text-blue-600 hover:underline"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                     >
+                       6a942dfd-425b-4aa0-9863-c11b005330ae
+                     </a>
                     </span>
                   </p>
                   <p className="text-sm mt-1">No expiration date</p>
@@ -58,7 +72,14 @@ export default function Certifications() {
                   <p className="text-sm mt-1">
                     Certificate:{" "}
                     <span className="font-mono text-xs">
-                      c9c44146-a422-438a-a5f0-22b841acdb99
+                     <a
+                       href="https://www.credly.com/badges/c9c44146-a422-438a-a5f0-22b841acdb99"
+                       className="text-blue-600 hover:underline"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                     >
+                       c9c44146-a422-438a-a5f0-22b841acdb99
+                     </a>
                     </span>
                   </p>
                   <p className="text-sm mt-1">No expiration date</p>

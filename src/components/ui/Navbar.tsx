@@ -12,8 +12,25 @@ import {
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-0 w-full py-4 px-6 bg-transparent z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-end">
+    <nav
+      className="fixed top-0 w-full py-3 px-6 shadow-md"
+      style={{ background: 'var(--background)', zIndex: 9999 }}
+    >
+      <div className="max-w-6xl mx-auto flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <a href="https://wa.me/6281324985365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-6 h-6 hover:opacity-75 transition" />
+          </a>
+          <a href="mailto:vibbyfs@gmail.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <img src="/icons/email.svg" alt="Email" className="w-6 h-6 hover:opacity-75 transition" />
+          </a>
+          <a href="https://linkedin.com/in/vibby-febriyan-sakti-9a976321a" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6 hover:opacity-75 transition" />
+          </a>
+          <a href="https://github.com/vibbyfs/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <img src="/icons/github.svg" alt="GitHub" className="w-6 h-6 hover:opacity-75 transition" />
+          </a>
+        </div>
 
         <div className="flex items-center">
           <DropdownMenu>

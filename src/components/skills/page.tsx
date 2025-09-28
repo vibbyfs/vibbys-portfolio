@@ -21,13 +21,13 @@ export default function Skills() {
             <AccordionTrigger>Front End</AccordionTrigger>
             <AccordionContent>
               <ul className="flex flex-wrap gap-2 mt-2">
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">React JS</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Redux</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">React Native</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">HTML</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">CSS</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">TailwindCSS</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Apollo Client</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black text-sm">React JS</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Redux</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">React Native</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">HTML</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">CSS</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">TailwindCSS</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Apollo Client</li>
               </ul>
             </AccordionContent>
           </AccordionItem>
@@ -36,15 +36,15 @@ export default function Skills() {
             <AccordionTrigger>Back End</AccordionTrigger>
             <AccordionContent>
               <ul className="flex flex-wrap gap-2 mt-2">
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Node JS</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Express</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Sequelize</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">PostgreSQL</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">GraphQL</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Apollo Server</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">MongoDB</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">Redis</li>
-                <li className="px-3 py-1 rounded bg-slate-100 text-sm">REST API</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Node JS</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Express</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Sequelize</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">PostgreSQL</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">GraphQL</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Apollo Server</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">MongoDB</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">Redis</li>
+                <li className="px-3 py-1 rounded bg-[#f4f2ee] border-2 border:black">REST API</li>
               </ul>
             </AccordionContent>
           </AccordionItem>

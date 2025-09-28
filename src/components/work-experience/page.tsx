@@ -71,7 +71,7 @@ export default function WorkExperience() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-medium">
-                    Jakarta, Indonesia — Oct 2022 – Dec 2022
+                    Jakarta, Indonesia — Oct 2022 - Dec 2022
                   </p>
                   <ul className="list-disc ml-5 mt-2 text-sm space-y-1">
                     <li>
