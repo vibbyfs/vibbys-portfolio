@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="rounded-xl px-5 py-4">
             <TitleHeroSection />
             <h1 className="text-md text-center max-w-3xl mt-3">
-              <span className="block text-lg text-justify sm:text-xl sm:text-center md:text-2xl md:text-center lg:text-center mb-3">
+              <span className="block text-lg text-justify sm:text-xl md:text-2xl md:text-center lg:text-center mb-3">
                 Full Stack Developer
               </span>
             </h1>

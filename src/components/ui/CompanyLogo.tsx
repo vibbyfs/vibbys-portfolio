@@ -5,9 +5,11 @@ import React, { useState } from "react";
 type Props = {
   src: string;
   alt?: string;
-  width: number
-  height: number
+  width: number;
+  height: number;
   className?: string;
+  quality?: number;
+  sizes?: string;
 };
 
 export default function CompanyLogo({
@@ -16,6 +18,8 @@ export default function CompanyLogo({
   width,
   height,
   className = "object-contain w-full h-full",
+  quality,
+  sizes,
 }: Props) {
   const [failed, setFailed] = useState(false);
   return (
@@ -44,7 +48,10 @@ export default function CompanyLogo({
           alt={alt}
           width={width}
           height={height}
+          quality={quality ?? 90}
+          sizes={sizes ?? "100vw"}
           className={className}
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
           onError={() => setFailed(true)}
         />
       )}
