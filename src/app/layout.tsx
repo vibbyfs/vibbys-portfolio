@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hi, Im Vibby Febriyan Sakti",
   description:
-    "Full Stack Developer with a background in Warehouse & logistics and data analytics, building efficient, data driven web solutions using modern technologies",
+    "Transitioning from Warehouse & logistics and administration to full stack development, I merge real world problem solving with technical skills in data and web technologies.",
   icons: {
-    icon: "/v-code.png?v=2",
-    shortcut: "/v-code.png?v=2",
-    apple: "/v-code.png?v=2",
+    icon: [{ url: "/v-code.png?v=2", sizes: "32x32", type: "image/png" }],
+    shortcut: [{ url: "/v-code.png?v=2", sizes: "32x32", type: "image/png" }],
+    apple: [{ url: "/v-code.png?v=2", sizes: "120x120", type: "image/png" }],
   },
 };
 
