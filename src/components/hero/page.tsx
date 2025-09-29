@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <h1 className="text-md text-center max-w-3xl">
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
-              Hi, I'm Vibby Febriyan Sakti
+              {"Hi, I'm Vibby Febriyan Sakti"}
             </span>
             <br />
             <span className="block text-lg sm:text-xl md:text-2xl">

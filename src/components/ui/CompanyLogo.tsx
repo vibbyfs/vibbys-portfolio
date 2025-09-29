@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 type Props = {
@@ -19,7 +20,7 @@ export default function CompanyLogo({ src, alt = '', className = 'object-contain
           </text>
         </svg>
       ) : (
-        <img src={src} alt={alt} className={className} onError={() => setFailed(true)} />
+        <Image src={src} alt={alt} className={className} onError={() => setFailed(true)} />
       )}
     </div>
   );

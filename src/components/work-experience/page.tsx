@@ -27,6 +27,7 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/sumber-rasa-jaya.jpeg"
                     alt="Sumber Rasa Jaya logo"
+                    className="w-16 h-16"
                   />
                 </div>
                 <div className="flex-1">
