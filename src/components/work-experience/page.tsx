@@ -27,7 +27,9 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/sumber-rasa-jaya.jpeg"
                     alt="Sumber Rasa Jaya logo"
-                    className="w-16 h-16"
+                    width={24}
+                    height={24}
+                    
                   />
                 </div>
                 <div className="flex-1">
@@ -68,6 +70,8 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/oma-elly.jpeg"
                     alt="Oma Elly logo"
+                    width={24}
+                    height={24}
                   />
                 </div>
                 <div className="flex-1">
@@ -104,6 +108,8 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/fore-coffee.jpeg"
                     alt="Fore Coffee logo"
+                    width={24}
+                    height={24}
                   />
                 </div>
                 <div className="flex-1">
@@ -143,6 +149,8 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/reycom-rds.jpeg"
                     alt="Reycom RDS logo"
+                    width={24}
+                    height={24}
                   />
                 </div>
                 <div className="flex-1">
@@ -183,6 +191,8 @@ export default function WorkExperience() {
                   <CompanyLogo
                     src="/company/philocoffee.jpg"
                     alt="Philocoffee logo"
+                    width={24}
+                    height={24}
                   />
                 </div>
                 <div className="flex-1">

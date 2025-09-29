@@ -20,13 +20,24 @@ export default function Education() {
             <AccordionContent>
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 <div className="w-full md:w-36 h-24 bg-white border border-gray-200 rounded-md flex items-center justify-center overflow-hidden">
-                  <CompanyLogo src="/company/hacktiv8.webp" alt="Hacktiv8" />
+                  <CompanyLogo
+                    width={24}
+                    height={24}
+                    src="/company/hacktiv8.webp"
+                    alt="Hacktiv8"
+                  />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-muted-foreground">
-                    Full Stack JavaScript Immersive Program <a href="https://job-portal-manual.s3.us-east-1.amazonaws.com/Transcript+-+HCK-86+-+Vibby+Febriyan+Sakti.pdf" className="text-blue-600 hover:underline"
-                   target="_blank"
-                   rel="noopener noreferrer">(Transcript)</a>
+                    Full Stack JavaScript Immersive Program{" "}
+                    <a
+                      href="https://job-portal-manual.s3.us-east-1.amazonaws.com/Transcript+-+HCK-86+-+Vibby+Febriyan+Sakti.pdf"
+                      className="text-blue-600 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      (Transcript)
+                    </a>
                   </p>
                   <p className="text-sm mt-1">May 2025 - September 2025</p>
                 </div>
@@ -41,7 +52,12 @@ export default function Education() {
             <AccordionContent>
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 <div className="w-full md:w-36 h-24 bg-white border border-gray-200 rounded-md flex items-center justify-center overflow-hidden">
-                  <CompanyLogo src="/company/uic.png" alt="UIC" />
+                  <CompanyLogo
+                    width={24}
+                    height={24}
+                    src="/company/uic.png"
+                    alt="UIC"
+                  />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-muted-foreground">

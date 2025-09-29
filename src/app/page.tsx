@@ -14,8 +14,8 @@ export default function Home() {
       <Education />
       <WorkExperience />
       <Skills />
-      <Projects/>
-      <Certifications/>
+      <Projects />
+      <Certifications />
     </>
   );
 }
