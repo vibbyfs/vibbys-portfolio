@@ -47,7 +47,7 @@ export default function Education() {
 
           <AccordionItem value="ibnu-chaldun">
             <AccordionTrigger>
-              Universitas Ibnu Chaldun — Jakarta, Indonesia
+              Ibnu Chaldun University — Jakarta, Indonesia
             </AccordionTrigger>
             <AccordionContent>
               <div className="flex flex-col md:flex-row md:items-start gap-4">
@@ -61,7 +61,7 @@ export default function Education() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-muted-foreground">
-                    Bachelor of Law (GPA 3.19/4.00)
+                    Bachelor of Law (GPA 3.18/4.00)
                   </p>
                   <p className="text-sm mt-1">2017 – 2021</p>
                 </div>
