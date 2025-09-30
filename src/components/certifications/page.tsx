@@ -15,6 +15,29 @@ export default function Certifications() {
         <SectionHeader title="Certifications" id="certifications" />
 
         <Accordion type="single" collapsible className="w-full">
+           <AccordionItem value="udemy">
+            <AccordionTrigger>
+              Hacktiv8 — Fullstack Javascript Immersive
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-sm font-medium">Issued: Sep 2025</p>
+              <p className="text-sm mt-1">
+                Certificate:{" "}
+                <span className="font-mono text-xs">
+                 <a
+                   href="https://students.hacktiv8.com/certificates/df6da3a4-75b7-48bb-be1b-843c7cf81941"
+                   className="text-blue-600 hover:underline"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                 >
+                   df6da3a4-75b7-48bb-be1b-843c7cf81941
+                 </a>
+                </span>
+              </p>
+              <p className="text-sm mt-1">No expiration date</p>
+            </AccordionContent>
+          </AccordionItem>
+
           <AccordionItem value="udemy">
             <AccordionTrigger>
               Udemy — The Complete Full-stack Web Development Bootcamp
